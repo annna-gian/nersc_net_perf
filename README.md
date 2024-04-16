@@ -1,2 +1,2 @@
-# nersc_perf_anal
+# nersc_net_perf
 code for analyzing network flow performance for NERSC
