@@ -36,7 +36,7 @@ def main():
 	throughput_incoming_globus_21 = defaultdict(list)
 	throughput_incoming_interactive_21 = defaultdict(list)
 	
-	for file in sys.atgv[1]:
+	for file in sys.argv[1]:
 	#'dtn-tstat-2022.03-data.json','dtn-tstat-2022.04-data.json','dtn-tstat-2022.05-data.json','dtn-tstat-2022.06-data.json','dtn-tstat-2022.07-data.json','dtn-tstat-2022.08-data.json','dtn-tstat-2022.09-data.json','dtn-tstat-2022.10-data.json','dtn-tstat-2022.11-data.json','dtn-tstat-2022.12-data.json']:
 		with open(file,'r') as f:
 			tstat_data = [json.loads(line) for line in f]
