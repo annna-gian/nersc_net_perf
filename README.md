@@ -1,13 +1,13 @@
 # nersc_net_perf
-code for analyzing network flow performance for NERSC
+code for analyzing network flow performance for NERSC \
 
 ## Volume analysis
-Volume towards/from NERSC, towards/from DTNs, using Globus service and comparisons between the three is calculated by running:
-`python totals.py [list of tstat_file.json]`
-`python esnet_totals.py border_router_file.csv`
-To generate bar charts for the results: 
-`python total_bars.py`
-example of input list containing tstat records:
+Volume towards/from NERSC, towards/from DTNs, using Globus service and comparisons between the three is calculated by running: \
+`python totals.py [list of tstat_file.json]` \
+`python esnet_totals.py border_router_file.csv`\
+To generate bar charts for the results: \
+`python total_bars.py`\
+example of input list containing tstat records:\
 `[dtn-tstat-2022.02-data.json, dtn-tstat-2022.03-data.json, ...]`
 ## Flow size analysis
 To generate CDF graphs for different types of transfers run:
