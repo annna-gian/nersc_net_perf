@@ -379,7 +379,9 @@ def main():
 			#exit(0)
 			active_transfers_days_sorted = sorted(active_transfers_days.items())
 			active_transfers_days_in_sorted = sorted(active_transfers_days_in.items())
-			#print('Sorted active transfers by hour for dtn2')
+			total_transf = sum(active_transfers_days) + sum(active_transfers_days)
+			print('total transfers')
+			print(total_transf)
 			print(active_transfers_days_in_sorted)
 			print(active_transfers_days_sorted)
 			busiest_day_in = 0
