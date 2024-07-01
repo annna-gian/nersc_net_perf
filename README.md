@@ -1,5 +1,5 @@
 # nersc_net_perf
-code for analyzing network flow performance for NERSC 
+Network performance analysis and bottleneck identification for HPC networks
 
 ## Volume analysis
 Volume towards/from NERSC, towards/from DTNs, using Globus service and comparisons between the three is calculated by running: \
