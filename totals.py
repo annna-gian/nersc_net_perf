@@ -36,7 +36,7 @@ def main():
 	interactive = ['128.55.205.18','128.55.205.19','128.55.205.20','128.55.205.21','dtn01.nersc.gov', 'dtn02.nersc.gov', 'dtn03.nersc.gov', 'dtn04.nersc.gov']
 	##globus_nodes = ['128.55.205.26','128.55.205.27','128.55.205.28','128.55.205.29','128.55.205.36','dtn05.nersc.gov','dtn06.nersc.gov', 'dtn07.nersc.gov', 'dtn08.nersc.gov','dtn09.nersc.gov']
 	for dtn in interactive:
-	for file in sys.argv[1:]:
+		for file in sys.argv[1:]:
 			with open(file,'r') as f:
 				tstat_data = [json.loads(line) for line in f]
 				if '2022' in f.name:
