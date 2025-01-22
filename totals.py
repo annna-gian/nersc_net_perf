@@ -48,14 +48,14 @@ def main():
 						elif  '.nersc.gov' in i['_source']['source'] and '.nersc.gov' not in i['_source']['dest']:
 							print('NS traffic-leaving NERSC')
 							total_out_ns += float(i['_source']['values']['file_size_MB'])
-							if int(i['_source']['meta']['src_port']) >= 50000 or int(i['_source']['meta']['src_port']) <= 60000:
+							if int(i['_source']['meta']['src_port']) >= 50000 and int(i['_source']['meta']['src_port']) <= 60000:
 								#print('This is a globus transfer')
 	# # 						total_globus += 1
 								total_size_globus_out += float(i['_source']['values']['file_size_MB'])
 						elif  '.nersc.gov' in i['_source']['dest'] and '.nersc.gov' not in i['_source']['source']:
 							print('NS traffic-coming NERSC')
 							total_in_ns += float(i['_source']['values']['file_size_MB'])
-							if int(i['_source']['meta']['src_port']) >= 50000 or int(i['_source']['meta']['src_port']) <= 60000:
+							if int(i['_source']['meta']['src_port']) >= 50000 and int(i['_source']['meta']['src_port']) <= 60000:
 								#print('This is a globus transfer')
 	# # 						total_globus += 1
 								total_size_globus_in += float(i['_source']['values']['file_size_MB'])
